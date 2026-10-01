@@ -38,36 +38,28 @@
 
         .container { max-width: 560px; margin: 0 auto; }
 
-        .judul {
+        
+.judul {
   text-align: center;
   font-size: 36px;
-  font-weight: 600;
+  font-weight: 600; /* ← gak terlalu tebal */
   margin-bottom: 30px;
   letter-spacing: 1.5px;
   color: #ffffff;
 
-  /* Font mirip yang kamu lingkarin: halus, tidak kotak */
+  /* Font halus = sama kayak tulisan rakaxscript di bawah */
   font-family: 'Segoe UI', 'SF Pro Display', 'Roboto', Arial, sans-serif;
 
-  /* Opsional: kalau ingin sedikit rounded lebih lembut */
-  /* font-family: 'Segoe UI', 'Arial Rounded MT Bold', 'Helvetica Rounded', sans-serif; */
-
-  text-shadow:
-    0 0 4px rgba(0, 255, 136, 0.8),
-    0 0 8px rgba(0, 255, 136, 0.5);
+  /* Bayangan lembut saja */
+  text-shadow: 0 0 6px rgba(0, 162, 255, 0.5);
 }
-
 
 .judul span {
   color: #00ccff;
-  text-shadow: 0 0 8px rgba(0, 204, 255, 0.6);
+  text-shadow: 0 0 6px rgba(0, 204, 255, 0.6);
 }
 
 
-.judul span {
-  color: #00ccff;
-  filter: drop-shadow(0 0 6px rgba(0, 204, 255, 0.6));
-}
 
 @keyframes lembut {
   0% { background-position: 0% 50%; }
