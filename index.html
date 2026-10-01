@@ -40,23 +40,30 @@
 
         .judul {
   text-align: center;
-  font-size: 34px;
-  font-weight: 900;
+  font-size: 36px;
+  font-weight: 700;
   margin-bottom: 30px;
-  letter-spacing: 3px;
-  color: #e6ccff;
-  text-shadow: 
-    0 0 5px #cc66ff,
-    0 0 15px #aa33ff,
-    0 0 25px #8800ff;
+  letter-spacing: 2px;
+  color: #ffffff;
+  background: linear-gradient(90deg, #ffffff, #99ddff, #00ccff, #99ddff, #ffffff);
+  background-size: 300% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: lembut 5s linear infinite;
+  filter: drop-shadow(0 0 8px rgba(0, 170, 255, 0.4));
 }
 
 .judul span {
-  color: #ff66ff;
-  text-shadow: 
-    0 0 5px #ff66ff,
-    0 0 15px #ff33ff;
+  color: #00ccff;
+  filter: drop-shadow(0 0 6px rgba(0, 204, 255, 0.6));
 }
+
+@keyframes lembut {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 300% 50%; }
+}
+
 
         .kotak {
             background: var(--abu);
