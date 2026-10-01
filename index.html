@@ -41,18 +41,22 @@
         .judul {
   text-align: center;
   font-size: 36px;
-  font-weight: 700;
+  font-weight: 600; /* gak terlalu tebal */
   margin-bottom: 30px;
   letter-spacing: 2px;
+  
+  /* INI BAGIAN YANG DIUBAH: jenis huruf */
+  font-family: 'Segoe UI', 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
+  
   color: #ffffff;
-  background: linear-gradient(90deg, #ffffff, #99ddff, #00ccff, #99ddff, #ffffff);
-  background-size: 300% 100%;
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  animation: lembut 5s linear infinite;
-  filter: drop-shadow(0 0 8px rgba(0, 170, 255, 0.4));
+  text-shadow: 0 0 8px rgba(0, 162, 255, 0.5);
 }
+
+.judul span {
+  color: #00ccff;
+  text-shadow: 0 0 8px rgba(0, 204, 255, 0.6);
+}
+
 
 .judul span {
   color: #00ccff;
