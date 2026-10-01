@@ -131,12 +131,24 @@
         }
 
         .footer {
-            text-align: center;
-            margin-top: 35px;
-            font-size: 13px;
-            color: #6B7280;
-            letter-spacing: 1px;
-        }
+  text-align: center;
+  margin-top: 35px;
+  font-size: 22px;
+  font-weight: bold;
+  background: linear-gradient(90deg, #ff4d4d, #ff9933, #ffff33, #33cc33, #3399ff, #9933ff);
+  background-size: 400%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: pelangi 4s linear infinite;
+  letter-spacing: 2px;
+}
+
+@keyframes pelangi {
+  0% { background-position: 0%; }
+  100% { background-position: 400%; }
+}
+
     </style>
 </head>
 <body>
@@ -209,10 +221,6 @@ function escapeHtml(teks) {
     return div.innerHTML;
 }
 </script>
-<!-- Watermark -->
-<div style="position: fixed; bottom: 15px; right: 20px; color: rgba(255,255,255,0.35); font-size: 14px; font-weight: 500; pointer-events: none; z-index: 999;">
-  © rakaxscript
-</div>
 
 </body>
 </html>
