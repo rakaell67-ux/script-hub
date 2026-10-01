@@ -41,16 +41,24 @@
         .judul {
   text-align: center;
   font-size: 36px;
-  font-weight: 600; /* gak terlalu tebal */
+  font-weight: 600;
   margin-bottom: 30px;
-  letter-spacing: 2px;
-  
-  /* INI BAGIAN YANG DIUBAH: jenis huruf */
-  font-family: 'Segoe UI', 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
-  
+  letter-spacing: 1.5px;
   color: #ffffff;
-  text-shadow: 0 0 8px rgba(0, 162, 255, 0.5);
+
+  /* Font halus modern */
+  font-family: 'Segoe UI', 'SF Pro Display', 'Roboto', sans-serif;
+
+  /* Opsional: biar tidak terlalu kotak */
+  text-transform: none;
+  text-decoration: none;
+
+  /* Ganti outline hijau yang tebal jadi cahaya lembut */
+  text-shadow:
+    0 0 4px rgba(0, 255, 136, 0.8),
+    0 0 8px rgba(0, 255, 136, 0.5);
 }
+
 
 .judul span {
   color: #00ccff;
